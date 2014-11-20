@@ -9,6 +9,12 @@ $app = new \Slim\Slim(array(
     'templates.path' => BASE_DIR . '/templates'
 ));
 
+$view = $app->view();
+
+$view->parserExtensions = array(
+  new \Slim\Views\TwigExtension(),
+);
+
 foreach(glob(BASE_DIR . '/config/*.php') as $c){
   require $c;
 }
