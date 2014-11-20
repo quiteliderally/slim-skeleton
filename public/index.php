@@ -13,6 +13,10 @@ foreach(glob(BASE_SIR . '/config/*.php') as $c){
   require $c;
 }
 
+foreach(glob(BASE_SIR . '/modules/*.php') as $c){
+  require $c;
+}
+
 require BASE_DIR . '/app/main.php';
 
 $app->run();
