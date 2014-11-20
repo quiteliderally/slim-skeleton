@@ -9,11 +9,11 @@ $app = new \Slim\Slim(array(
     'templates.path' => BASE_DIR . '/templates'
 ));
 
-foreach(glob(BASE_SIR . '/config/*.php') as $c){
+foreach(glob(BASE_DIR . '/config/*.php') as $c){
   require $c;
 }
 
-foreach(glob(BASE_SIR . '/modules/*.php') as $c){
+foreach(glob(BASE_DIR . '/modules/*.php') as $c){
   require $c;
 }
 
