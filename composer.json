@@ -4,6 +4,6 @@
         "slim/views": "~0.1",
         "twig/twig": "~1.16",
         "j4mie/idiorm": "~1.5",
-        "guzzle/guzzle": "~3.9"
+        "guzzlehttp/guzzle": "5.*"
     }
 }
