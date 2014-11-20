@@ -1,0 +1,4 @@
+log/*.log
+*.*.sw?
+composer.lock
+vendor/*
