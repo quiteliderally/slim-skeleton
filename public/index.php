@@ -1,8 +1,6 @@
 <?php
 
-define('BASE_DIR', realpath(__DIR__ . '/..'));
-
-require BASE_DIR . '/vendor/autoload.php';
+require __DIR__ . '/../bootstrap/php';
 
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig(),
@@ -14,10 +12,6 @@ $view = $app->view();
 $view->parserExtensions = array(
   new \Slim\Views\TwigExtension(),
 );
-
-foreach(glob(BASE_DIR . '/config/*.php') as $c){
-  require $c;
-}
 
 foreach(glob(BASE_DIR . '/modules/*.php') as $c){
   require $c;
