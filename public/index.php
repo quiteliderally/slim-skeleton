@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../bootstrap/php';
+require __DIR__ . '/../bootstrap.php';
 
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig(),
