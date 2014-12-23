@@ -13,6 +13,10 @@ $view->parserExtensions = array(
   new \Slim\Views\TwigExtension(),
 );
 
+foreach(glob(BASE_DIR . '/config/*.php') as $c){
+  require $c;
+}
+
 foreach(glob(BASE_DIR . '/modules/*.php') as $c){
   require $c;
 }
