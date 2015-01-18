@@ -3,6 +3,9 @@
 if(isset($_SERVER['HTTP_X_SCRIPT_NAME'])){
   $_SERVER['SCRIPT_NAME'] = $_SERVER['HTTP_X_SCRIPT_NAME'];
 }
+if(isset($_SERVER['HTTP_X_SERVER_PORT'])){
+  $_SERVER['SERVER_PORT'] = $_SERVER['HTTP_X_SERVER_PORT'];
+}
 
 require __DIR__ . '/../bootstrap.php';
 
